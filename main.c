@@ -27,6 +27,7 @@ void lcdData(char);
 void lcd_print(unsigned char *str);
 void lcd_gotoxy(unsigned char x, unsigned char y);
 void lcd_update_time(void);
+void keypad_scan(void);
 
 // Timer counter 1 compare match A interrupt service routine/interrupt handler
 ISR(TIMER1_COMPA_vect);
@@ -41,26 +42,15 @@ int main()
     lcd_print("Press A key"); // Print the text
     lcd_gotoxy(1, 2);         // Go to the location 1,2 of lcd
 
-    // Keyboard time
-    // Let's make the columns zero (PC0 PC1 PC2 PC3
-    DDRC = 0x00;
-    _delay_ms(1);
-
-    // Let's make our rows zero (PC4 PC5 PB1 PB2)
-    DDRC ^= 0x00110000;
-    _delay_ms(1);
-    DDRB ^= 0x00000011;
-    _delay_ms(1);
-
     while (1)
     {
-        // If any of the collumn pins go high, execute on the loop
-        if(PINC != 00110000){
+    }
+};
 
-        }
-    };
+// Function for the keypad
+void keypad_scan(){
+    
 
-    return 0;
 }
 
 // Function moving to a given position on the LCD screen
