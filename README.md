@@ -26,7 +26,7 @@ Set up the circuit as shown in the figure below
 A video of the code running
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=nRCt9fh_DLI
-" target="_blank"><p align="center"><img src="./Assets/WP_20171101_13_13_23_Pro.jpg" 
+" target="_blank"><p align="center"><img src="./Assets/WP_20171107_17_07_56_Pro.jpg" 
 alt="lcd screen showing characters based on what key is pressed on the keypad"/></p></a>
 
 ### Prerequisite
